@@ -1,0 +1,27 @@
+{
+  "name": "dsh-ui-text-zoom",
+  "version": "0.1.0",
+  "description": "DSH Web UI text zoom: a settings-section plugin that zooms the whole interface live (slider, 80%–160%, persists in settings.yaml).",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "vendor"
+  ]
+}

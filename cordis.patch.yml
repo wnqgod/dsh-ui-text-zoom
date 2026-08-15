@@ -1,0 +1,8 @@
+# dsh bundle layer: mount the ui-text-zoom plugin.
+# Config: zoom (0.8..1.6) is the base value; the Web settings section
+# (设置 → 界面缩放) overlays it live via the ui-text-zoom namespace.
+- insert:
+    - id: ui-text-zoom
+      name: 'dsh-ui-text-zoom'
+      config:
+        zoom: 1.1
